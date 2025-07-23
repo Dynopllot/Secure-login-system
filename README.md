@@ -1,13 +1,13 @@
 # Secure Login System – Cybersecurity Edition
 
 ## Objective
-Build a modern, secure Django login system with advanced security features and a cyber-themed user interface, suitable for real-world applications and cybersecurity demonstrations.
+To design and develop a robust, secure login system using Django and Python that ensures user authentication through encrypted password storage (bcrypt), detects suspicious access patterns (including VPN usage), blocks IP addresses after multiple failed attempts, and sends real-time email alerts to administrators. The system integrates logging mechanisms to track login activity and includes a web-based admin dashboard for viewing and managing authentication logs. The primary objective is to enhance login security, prevent brute-force attacks, and provide a scalable framework for real-world web applications.
 
 ## Tech Stack
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS (custom cyber-themed styling)
 - **Database:** SQLite (default, can be swapped)
-- **Security:** bcrypt, IPQualityScore API, Django messages, custom middleware
+- **Security:** bcrypt, IPQualityScore API, Django messages
 
 ## Features
 - Custom user model with bcrypt password hashing
@@ -15,9 +15,7 @@ Build a modern, secure Django login system with advanced security features and a
 - VPN/Proxy detection (IPQualityScore API)
 - Email alerts on failed logins
 - Logging of login attempts
-- Cybersecurity-themed UI (dark, neon, modern)
-- All error/block messages styled in the login box
-
+  
 ## How It Works
 1. **User Registration & Login:**
    - Users register and log in using a custom user model.
@@ -30,7 +28,7 @@ Build a modern, secure Django login system with advanced security features and a
    - Failed logins trigger email alerts to the admin/user.
    - All events are logged for audit and monitoring.
 4. **User Experience:**
-   - All error and block messages are shown in a cyber-themed, styled login box.
+   - All error and block messages are shown in a login box.
    - Dashboard displays security features and tips after login.
 
 ## Screenshots
@@ -58,14 +56,6 @@ Build a modern, secure Django login system with advanced security features and a
 ### 6. Email Alert Example
 <img width="1167" height="572" alt="image" src="https://github.com/user-attachments/assets/c0784f54-45da-4f59-abbb-2f7b377a1273" />
 
-
-**Descriptions:**
-- **Login Page:** login form with styled error messages and security feedback.
-- **Register Page:** Secure registration form with custom user model and styled validation.
-- **Cybersecurity Dashboard:** After login, users see a dashboard summarizing security features and tips.
-- **IP Blocked Message:** After 3 failed login attempts, the user's IP is temporarily blocked and a styled message is shown.
-- **VPN/Proxy Blocked Message:** If a VPN or proxy is detected, login is blocked and a warning is displayed.
-- **Email Alert Example:** Shows the alert email sent to the admin/user on failed login attempts.
 
 ## Quick Start
 1. **Clone the repo:**
@@ -119,7 +109,7 @@ Build a modern, secure Django login system with advanced security features and a
 
 ## Security Notes
 - For local development, VPN/proxy detection may block localhost. Adjust as needed.
-- All error/block messages are shown in the cyber-themed login box.
+- All error/block messages are shown in the login box.
 
 ## License
 MIT
