@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2><span style="color:#00ffae;">&#128273;</span> Register</h2>
+<form method="post" autocomplete="off">
+    {% csrf_token %}
+    <div style="display:flex; flex-direction:column; gap:0.7em;">
+        {% for field in form %}
+            <div>
+                <label for="{{ field.id_for_label }}" style="color:#00ffae; letter-spacing:1px;">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                    <div style="color:#ff4b4b; font-size:0.95em;">{{ field.errors|striptags }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <button type="submit">Register</button>
+</form>
+<div style="text-align:center; margin-top:1.2em;">
+    <a href="{% url 'login' %}">Already have an account? Login</a>
+</div>
+{% endblock %}

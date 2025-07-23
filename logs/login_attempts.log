@@ -1,0 +1,666 @@
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2739
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2790
+/home/manhunt/Lazzy/secure_login_/accounts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 713
+"GET /register/ HTTP/1.1" 200 1204
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manhunt/Lazzy/secure_login_/accounts/views.py", line 15, in register_view
+    if form.is_valid():
+       ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+  File "/usr/lib/python3/dist-packages/django/contrib/auth/forms.py", line 165, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/db/models/manager.py", line 196, in __get__
+    raise AttributeError(
+    ...<5 lines>...
+    )
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'accounts.CustomUser'
+"POST /register/ HTTP/1.1" 500 95085
+/home/manhunt/Lazzy/secure_login_/accounts/forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 713
+"GET /register/ HTTP/1.1" 200 1204
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 713
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 140
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 713
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4311
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 5156
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/auth/group/ HTTP/1.1" 200 6977
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 289782
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 289782
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /admin/auth/group/ HTTP/1.1" 200 6977
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 713
+"GET /admin/auth/group/ HTTP/1.1" 200 6977
+"GET /admin/auth/ HTTP/1.1" 200 5176
+"GET /admin/ HTTP/1.1" 200 5156
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 5156
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 5832
+"GET /admin/accounts/customuser/add/ HTTP/1.1" 200 9893
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/ HTTP/1.1" 200 5832
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/migrations/__init__.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/forms.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Forbidden: /login/
+"GET /login/ HTTP/1.1" 403 63
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 713
+Failed login attempt from IP 127.0.0.1
+"GET /login/ HTTP/1.1" 200 713
+Failed login attempt from IP 127.0.0.1
+"GET /login/ HTTP/1.1" 200 713
+Failed login attempt from IP 127.0.0.1
+Forbidden: /login/
+"GET /login/ HTTP/1.1" 403 63
+Forbidden: /login/
+"GET /login/ HTTP/1.1" 403 63
+Forbidden: /login/
+"GET /login/ HTTP/1.1" 403 63
+Forbidden: /admin/
+"GET /admin/ HTTP/1.1" 403 63
+Forbidden: /admin/auth/
+"GET /admin/auth/ HTTP/1.1" 403 63
+Forbidden: /admin/
+"GET /admin/ HTTP/1.1" 403 63
+Forbidden: /admin/
+"GET /admin/ HTTP/1.1" 403 63
+Forbidden: /
+"GET / HTTP/1.1" 403 63
+Forbidden: /
+"GET / HTTP/1.1" 403 63
+Forbidden: /
+"GET / HTTP/1.1" 403 63
+Forbidden: /
+"GET / HTTP/1.1" 403 63
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 1007
+"GET /register/ HTTP/1.1" 200 1215
+"POST /register/ HTTP/1.1" 200 1338
+"POST /register/ HTTP/1.1" 200 1395
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 840
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 1010
+Successful login: Pavan_gc from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 154
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /logout/ HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view accounts.views.login_view didn't return an HttpResponse object. It returned None instead.
+"GET /login/ HTTP/1.1" 500 70563
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view accounts.views.login_view didn't return an HttpResponse object. It returned None instead.
+"GET /login/ HTTP/1.1" 500 70700
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view accounts.views.login_view didn't return an HttpResponse object. It returned None instead.
+"GET /login/ HTTP/1.1" 500 70700
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view accounts.views.login_view didn't return an HttpResponse object. It returned None instead.
+"GET /login/ HTTP/1.1" 500 70407
+"GET /home/ HTTP/1.1" 200 146
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+"GET / HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view accounts.views.login_view didn't return an HttpResponse object. It returned None instead.
+"GET /login/ HTTP/1.1" 500 70407
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 151
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 151
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 852
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+"GET / HTTP/1.1" 302 0
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 852
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5DMkuPkIC'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+"GET / HTTP/1.1" 302 0
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5DN9xNWFp'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 852
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5DO35naSn'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5DcJigqQQ'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 852
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5Dd0sqbib'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 852
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 151
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+"GET /login/ HTTP/1.1" 200 724
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 151
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 724
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 3062
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+"GET /login/ HTTP/1.1" 200 4075
+"GET /register/ HTTP/1.1" 200 4572
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4236
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4236
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4236
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4236
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/secure_login/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4236
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4256
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4075
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4471
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4471
+Successful login: pavan from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 4652
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4471
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4632
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4471
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4467
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Forbidden: /login/
+"POST /login/ HTTP/1.1" 403 63
+Forbidden: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 403 63
+Forbidden: /
+"GET / HTTP/1.1" 403 63
+Forbidden: /
+"GET / HTTP/1.1" 403 63
+Forbidden: /login/
+"GET /login/ HTTP/1.1" 403 63
+Forbidden: /login/
+"GET /login/ HTTP/1.1" 403 63
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4467
+"GET /login/ HTTP/1.1" 200 4467
+"GET /login/ HTTP/1.1" 200 4467
+"GET /login/ HTTP/1.1" 200 4467
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Forbidden: /login/
+"POST /login/ HTTP/1.1" 403 63
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4467
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/manhunt/Lazzy/secure_login_/accounts/middleware.py", line 12, in __call__
+    return HttpResponseForbidden("Your IP has been blocked due to too many failed login attempts.")
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HttpResponseForbidden' is not defined
+"POST /login/ HTTP/1.1" 500 65228
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4467
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/manhunt/Lazzy/secure_login_/accounts/middleware.py", line 13, in __call__
+    return HttpResponseForbidden("Your IP has been blocked due to too many failed login attempts.")
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HttpResponseForbidden' is not defined
+"POST /login/ HTTP/1.1" 500 65227
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/manhunt/Lazzy/secure_login_/accounts/middleware.py", line 13, in __call__
+    return HttpResponseForbidden("Your IP has been blocked due to too many failed login attempts.")
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'HttpResponseForbidden' is not defined
+"POST /login/ HTTP/1.1" 500 65227
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4467
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+"POST /login/ HTTP/1.1" 200 3875
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4467
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 3875
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4469
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 3736
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+"GET / HTTP/1.1" 200 3740
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4473
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3048
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4473
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/middleware.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4541
+Failed login attempt from IP 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4702
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4546
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5LTXvINST'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 5012
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/manhunt/Lazzy/secure_login_/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5LaNvklrC'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 4820
+"GET / HTTP/1.1" 302 0
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5LhANNalG'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 4671
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5LoiWSIrl'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4671
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5LpdmK0lu'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4671
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5Lr14lHYk'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 4671
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5Lrf1wfAW'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"POST /login/ HTTP/1.1" 200 4671
+IPQualityScore response for 127.0.0.1: {'success': True, 'message': 'Success', 'fraud_score': 100, 'country_code': 'N/A', 'region': 'N/A', 'city': 'N/A', 'ISP': 'Reserved', 'ASN': 3, 'organization': 'Reserved', 'is_crawler': False, 'timezone': '', 'mobile': False, 'host': 'localhost', 'proxy': True, 'vpn': True, 'tor': False, 'active_vpn': False, 'active_tor': False, 'recent_abuse': True, 'bot_status': True, 'connection_type': 'Premium required.', 'abuse_velocity': 'Premium required.', 'zip_code': 'N/A', 'latitude': 0, 'longitude': 0, 'abuse_events': ['Enterprise plan required to view abuse events and active proxy networks'], 'request_id': 'Z5LubFrg2Y'}
+Blocked login attempt from VPN/Proxy IP: 127.0.0.1
+"GET /login/ HTTP/1.1" 200 4671

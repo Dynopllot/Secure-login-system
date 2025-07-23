@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2><span style="color:#00ffae;">&#128187;</span> Cybersecurity Dashboard</h2>
+<div style="margin:1.5em 0;">
+    <p style="font-size:1.1em; color:#00ffae;">Welcome to your secure portal.</p>
+    <ul style="margin:1.2em 0 1.5em 1.2em; color:#e0e0e0;">
+        <li><b>Account Security:</b> Your account is protected with advanced encryption and real-time threat detection.</li>
+        <li><b>Login Monitoring:</b> All login attempts are logged and monitored for suspicious activity.</li>
+        <li><b>VPN/Proxy Detection:</b> We block unauthorized access from VPNs and proxies to keep your data safe.</li>
+        <li><b>IP Blocking:</b> Multiple failed logins from the same IP will result in a temporary block.</li>
+        <li><b>Alerts:</b> You will receive email alerts for failed login attempts to your account.</li>
+    </ul>
+    <div style="background:#181f2a; border-left:4px solid #00ffae; padding:1em; border-radius:6px; margin-bottom:1.5em;">
+        <b>Cyber Tip:</b> Never share your password. Use a password manager and enable two-factor authentication wherever possible.
+    </div>
+    <div style="text-align:center; margin-top:2em;">
+        <a href="{% url 'logout' %}" style="color:#ff4b4b; font-weight:bold;">Logout</a>
+    </div>
+</div>
+{% endblock %}

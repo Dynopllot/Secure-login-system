@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h2><span style="color:#00ffae;">&#128274;</span> Login</h2>
+<form method="post" autocomplete="off">
+    {% csrf_token %}
+    {% if messages %}
+        <ul class="messages">
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    <div style="display:flex; flex-direction:column; gap:0.7em;">
+        {% if form %}
+            {% for field in form %}
+                <div>
+                    <label for="{{ field.id_for_label }}" style="color:#00ffae; letter-spacing:1px;">{{ field.label }}</label>
+                    {{ field }}
+                    {% if field.errors %}
+                        <div style="color:#ff4b4b; font-size:0.95em;">{{ field.errors|striptags }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <button type="submit">Login</button>
+</form>
+<div style="text-align:center; margin-top:1.2em;">
+    <a href="{% url 'register' %}">Need an account? Register</a>
+</div>
+{% endblock %}

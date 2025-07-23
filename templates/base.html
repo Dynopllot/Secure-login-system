@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #101820;
+            color: #e0e0e0;
+            font-family: 'Share Tech Mono', monospace;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(20, 30, 40, 0.98);
+            border: 1px solid #00ffae;
+            border-radius: 12px;
+            box-shadow: 0 0 24px #00ffae44;
+            padding: 2.5rem 2rem 2rem 2rem;
+            min-width: 340px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #00ffae;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+        ul.messages {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        ul.messages li {
+            background: #1a2733;
+            color: #ff4b4b;
+            border-left: 4px solid #ff4b4b;
+            padding: 0.75em 1em;
+            margin-bottom: 0.5em;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 0 8px #ff4b4b99, 0 0 2px #00ffae55;
+            text-shadow: 0 0 4px #ff4b4b88, 0 0 2px #fff;
+            display: flex;
+            align-items: center;
+        }
+        ul.messages li::before {
+            content: '\26A0'; /* Warning icon */
+            margin-right: 0.7em;
+            color: #ff4b4b;
+            font-size: 1.3em;
+        }
+        a {
+            color: #00ffae;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ff4b4b;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1em;
+        }
+        input, select, button {
+            font-family: inherit;
+            font-size: 1em;
+            padding: 0.7em 1em;
+            border-radius: 4px;
+            border: 1px solid #00ffae;
+            background: #181f2a;
+            color: #e0e0e0;
+            outline: none;
+            transition: border 0.2s, box-shadow 0.2s;
+        }
+        input:focus, select:focus {
+            border: 1.5px solid #00ffae;
+            box-shadow: 0 0 6px #00ffae88;
+        }
+        button {
+            background: linear-gradient(90deg, #00ffae 0%, #008cff 100%);
+            color: #101820;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #00ffae33;
+            transition: background 0.2s, color 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #ff4b4b 0%, #00ffae 100%);
+            color: #fff;
+        }
+        .cyber-footer {
+            text-align: center;
+            margin-top: 2em;
+            color: #444c56;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {# Messages are now handled in the individual templates (e.g., login.html) to avoid duplicate display #}
+        {% block content %}{% endblock %}
+    </div>
+    <div class="cyber-footer">&copy; {{ now|date:'Y' }} Secure Login System &mdash; Cybersecurity Edition</div>
+</body>
+</html>
