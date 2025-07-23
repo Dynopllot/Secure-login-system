@@ -9,19 +9,24 @@ A modern, secure Django login system with advanced security features and a cyber
 
 
 ### 2. Register Page
-![Register UI](screenshots/register.png)
+ 
+<img width="1280" height="791" alt="image" src="https://github.com/user-attachments/assets/31536925-d96a-456a-8d42-f7472b7274bd" />
 
 ### 3. Cybersecurity Dashboard
-![Dashboard UI](screenshots/dashboard.png)
+ 
+<img width="1280" height="895" alt="image" src="https://github.com/user-attachments/assets/c34ff4d4-5b55-4d97-819b-979b4cf8b172" />
 
 ### 4. IP Blocked Message
-![IP Blocked](screenshots/ip_blocked.png)
+ <img width="1280" height="531" alt="image" src="https://github.com/user-attachments/assets/27172fb6-6045-4fe7-9cea-2b4de83cf573" />
+
 
 ### 5. VPN/Proxy Blocked Message
-![VPN/Proxy Blocked](screenshots/vpn_blocked.png)
+ <img width="1280" height="676" alt="image" src="https://github.com/user-attachments/assets/b0d0db77-f80f-4dfd-b1ea-6e179592fa9a" />
+
 
 ### 6. Email Alert Example
-![Email Alert](screenshots/email_alert.png)
+<img width="1167" height="572" alt="image" src="https://github.com/user-attachments/assets/c0784f54-45da-4f59-abbb-2f7b377a1273" />
+
 
 **Descriptions:**
 - **Login Page:** login form with styled error messages and security feedback.
