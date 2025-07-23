@@ -23,7 +23,7 @@ A modern, secure Django login system with advanced security features and a cyber
 ![Email Alert](screenshots/email_alert.png)
 
 **Descriptions:**
-- **Login Page:** Modern cyber-themed login form with styled error messages and security feedback.
+- **Login Page:** login form with styled error messages and security feedback.
 - **Register Page:** Secure registration form with custom user model and styled validation.
 - **Cybersecurity Dashboard:** After login, users see a dashboard summarizing security features and tips.
 - **IP Blocked Message:** After 3 failed login attempts, the user's IP is temporarily blocked and a styled message is shown.
