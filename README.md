@@ -1,6 +1,37 @@
 # Secure Login System – Cybersecurity Edition
 
-A modern, secure Django login system with advanced security features and a cyber-themed UI.
+## Objective
+Build a modern, secure Django login system with advanced security features and a cyber-themed user interface, suitable for real-world applications and cybersecurity demonstrations.
+
+## Tech Stack
+- **Backend:** Django (Python)
+- **Frontend:** HTML, CSS (custom cyber-themed styling)
+- **Database:** SQLite (default, can be swapped)
+- **Security:** bcrypt, IPQualityScore API, Django messages, custom middleware
+
+## Features
+- Custom user model with bcrypt password hashing
+- IP blocking after 3 failed login attempts
+- VPN/Proxy detection (IPQualityScore API)
+- Email alerts on failed logins
+- Logging of login attempts
+- Cybersecurity-themed UI (dark, neon, modern)
+- All error/block messages styled in the login box
+
+## How It Works
+1. **User Registration & Login:**
+   - Users register and log in using a custom user model.
+   - Passwords are hashed with bcrypt for strong security.
+2. **Login Security:**
+   - All login attempts are logged.
+   - After 3 failed attempts from the same IP, that IP is temporarily blocked.
+   - If a VPN/proxy is detected (via IPQualityScore), login is blocked and a warning is shown.
+3. **Alerts & Monitoring:**
+   - Failed logins trigger email alerts to the admin/user.
+   - All events are logged for audit and monitoring.
+4. **User Experience:**
+   - All error and block messages are shown in a cyber-themed, styled login box.
+   - Dashboard displays security features and tips after login.
 
 ## Screenshots
 
@@ -35,15 +66,6 @@ A modern, secure Django login system with advanced security features and a cyber
 - **IP Blocked Message:** After 3 failed login attempts, the user's IP is temporarily blocked and a styled message is shown.
 - **VPN/Proxy Blocked Message:** If a VPN or proxy is detected, login is blocked and a warning is displayed.
 - **Email Alert Example:** Shows the alert email sent to the admin/user on failed login attempts.
-
-## Features
-- **Custom User Model** with bcrypt password hashing
-- **IP blocking** after 3 failed login attempts
-- **VPN/Proxy detection** (IPQualityScore API)
-- **Email alerts** on failed logins
-- **Logging** of login attempts
-- **Cybersecurity-themed UI** (dark, neon, modern)
-- **Django messages** for all errors/blocks, styled in the login box
 
 ## Quick Start
 1. **Clone the repo:**
