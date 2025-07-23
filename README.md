@@ -34,6 +34,7 @@ To design and develop a robust, secure login system using Django and Python that
 ## Screenshots
 
 ### 1. Login Page
+
 <img width="1280" height="694" alt="image" src="https://github.com/user-attachments/assets/645f594c-f8ad-4b45-a6eb-5a31455fb62c" />
 
 
@@ -46,16 +47,24 @@ To design and develop a robust, secure login system using Django and Python that
 <img width="1280" height="895" alt="image" src="https://github.com/user-attachments/assets/c34ff4d4-5b55-4d97-819b-979b4cf8b172" />
 
 ### 4. IP Blocked Message
+
  <img width="1280" height="531" alt="image" src="https://github.com/user-attachments/assets/27172fb6-6045-4fe7-9cea-2b4de83cf573" />
 
 
 ### 5. VPN/Proxy Blocked Message
+
  <img width="1280" height="676" alt="image" src="https://github.com/user-attachments/assets/b0d0db77-f80f-4dfd-b1ea-6e179592fa9a" />
 
 
 ### 6. Email Alert Example
+
 <img width="1167" height="572" alt="image" src="https://github.com/user-attachments/assets/c0784f54-45da-4f59-abbb-2f7b377a1273" />
 
+### 7. Admin Dashboard
+
+<img width="1280" height="515" alt="image" src="https://github.com/user-attachments/assets/9384b953-3852-4b5a-ab61-18e694a180f4" />
+
+<img width="1280" height="631" alt="image" src="https://github.com/user-attachments/assets/a2ea19b6-9981-4de5-986a-f04d23d353fe" />
 
 ## Quick Start
 1. **Clone the repo:**
