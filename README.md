@@ -2,6 +2,34 @@
 
 A modern, secure Django login system with advanced security features and a cyber-themed UI.
 
+## Screenshots
+
+### 1. Login Page
+![Login UI](screenshots/login.png)
+
+### 2. Register Page
+![Register UI](screenshots/register.png)
+
+### 3. Cybersecurity Dashboard
+![Dashboard UI](screenshots/dashboard.png)
+
+### 4. IP Blocked Message
+![IP Blocked](screenshots/ip_blocked.png)
+
+### 5. VPN/Proxy Blocked Message
+![VPN/Proxy Blocked](screenshots/vpn_blocked.png)
+
+### 6. Email Alert Example
+![Email Alert](screenshots/email_alert.png)
+
+**Descriptions:**
+- **Login Page:** Modern cyber-themed login form with styled error messages and security feedback.
+- **Register Page:** Secure registration form with custom user model and styled validation.
+- **Cybersecurity Dashboard:** After login, users see a dashboard summarizing security features and tips.
+- **IP Blocked Message:** After 3 failed login attempts, the user's IP is temporarily blocked and a styled message is shown.
+- **VPN/Proxy Blocked Message:** If a VPN or proxy is detected, login is blocked and a warning is displayed.
+- **Email Alert Example:** Shows the alert email sent to the admin/user on failed login attempts.
+
 ## Features
 - **Custom User Model** with bcrypt password hashing
 - **IP blocking** after 3 failed login attempts
@@ -10,9 +38,6 @@ A modern, secure Django login system with advanced security features and a cyber
 - **Logging** of login attempts
 - **Cybersecurity-themed UI** (dark, neon, modern)
 - **Django messages** for all errors/blocks, styled in the login box
-
-## Screenshots
-![Login UI](screenshots/login.png)
 
 ## Quick Start
 1. **Clone the repo:**
