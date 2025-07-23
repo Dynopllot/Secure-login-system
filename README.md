@@ -5,7 +5,8 @@ A modern, secure Django login system with advanced security features and a cyber
 ## Screenshots
 
 ### 1. Login Page
-![Login UI](screenshots/login.png)
+<img width="1280" height="694" alt="image" src="https://github.com/user-attachments/assets/645f594c-f8ad-4b45-a6eb-5a31455fb62c" />
+
 
 ### 2. Register Page
 ![Register UI](screenshots/register.png)
